@@ -110,11 +110,43 @@ for i in zip(exchange_labels,iris_y):
 print('正确率：{}%'.format(right/(right+error)*100))
 ```
 
-## db-scan算法
+## DBSCAN算法
 
-### 1.用于计算不规则图形的中心点
+DBSCAN（Density-Based Spatial Clustering of Applications with Noise）是一种基于密度的聚类算法。
 
-![K均值算法图1](/img/machine-learning/k均值算法图1.png)
+### 算法特点
 
-计算出**每个点到距其第k近的点的距离**，然后将这些距离从大到小排序后进行绘图。
-![K均值算法图2](/img/machine-learning/k均值算法图2.png)
+- 可以发现任意形状的簇
+- 能够识别噪声点
+- 不需要预先指定簇的数量
+
+### 核心概念
+
+1. **ε-邻域**：以某点为中心，半径为 ε 的区域
+2. **核心点**：ε-邻域内至少包含 MinPts 个点的点
+3. **边界点**：不是核心点，但在某个核心点的 ε-邻域内
+4. **噪声点**：既不是核心点也不是边界点
+
+### 算法步骤
+
+1. 随机选择一个未访问的点
+2. 如果该点是核心点，创建一个新簇
+3. 将所有密度可达的点加入该簇
+4. 重复直到所有点都被访问
+
+### 代码示例
+
+```python
+from sklearn.cluster import DBSCAN
+import numpy as np
+
+# 创建 DBSCAN 模型
+dbscan = DBSCAN(eps=0.5, min_samples=5)
+
+# 拟合数据
+labels = dbscan.fit_predict(iris_X)
+
+# -1 表示噪声点
+print(f"噪声点数量: {np.sum(labels == -1)}")
+print(f"簇的数量: {len(set(labels)) - (1 if -1 in labels else 0)}")
+```
