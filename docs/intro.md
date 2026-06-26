@@ -1,52 +1,52 @@
-# 欢迎来到我的技术文档
+# Welcome
 
-这里记录了我在学习和工作中积累的技术笔记和经验总结。
+This site collects my technical notes, project write-ups, and learning records around AI, Python, computer vision, and web development.
 
-## 文档内容
+## Content
 
-### 📚 机器学习
+### Machine Learning
 
-学习机器学习算法的笔记，包括：
-- KNN 邻近算法
-- K 均值算法
-- 决策树
-- 逻辑回归
-- 线性回归
-- 随机森林
+Notes about common machine-learning algorithms and practical experiments:
 
-### 🖼️ OpenCV
+- KNN
+- K-Means
+- Decision Trees
+- Logistic Regression
+- Linear Regression
+- Random Forests
 
-计算机视觉库 OpenCV 的使用教程：
-- OpenCV 基础操作
-- 图像基本处理
-- OpenCV 进阶技巧
-- 图像分析与特征提取
+### OpenCV
 
-### 💻 编程语言
+Computer vision notes and tutorials:
 
-编程语言学习笔记：
-- Python 基础
-- Python 进阶
+- Basic OpenCV operations
+- Image processing
+- Feature extraction
+- Image analysis
 
-### 🛠️ 开发工具
+### Python
 
-常用开发工具的使用指南：
-- Git 代码管理
-- Docker 容器化
-- Neo4j 图数据库
-- MinIO 对象存储
-- Conda 环境管理
+Python learning notes:
 
-## 关于本站
+- Python basics
+- Advanced Python patterns
+- AI application scripts
 
-本站使用 [Docusaurus](https://docusaurus.io/) 构建，所有文档使用 Markdown 格式编写。
+### Developer Tools
 
-## 联系方式
+Practical notes for common development tools:
 
-如有问题或建议，欢迎通过以下方式联系我：
-- GitHub: [你的GitHub]
-- Email: [你的邮箱]
+- Git
+- Docker
+- Neo4j
+- MinIO
+- Conda
 
-## 更新日志
+## Projects
 
-- 2024-04-11: 网站初始化，添加基础文档
+- [AI Agent Playground](https://github.com/AAAzjzjzj/my-project)
+- [Tech Notes Website](https://github.com/AAAzjzjzj/my_website)
+
+## About
+
+Built with [Docusaurus](https://docusaurus.io/) and deployed with GitHub Pages.
